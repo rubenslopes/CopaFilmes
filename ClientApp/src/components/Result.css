@@ -1,0 +1,28 @@
+.Result ul{
+  padding: 0;
+}
+
+.Result__item {
+  margin: 8px 0;
+  display: flex;
+  align-items: stretch;
+}
+.Result__item-position {
+  background-color: rgb(222, 226, 230);
+  color: white;
+  font-size: 22px;
+  padding: 8px;
+  width: 52px;
+  height: 52px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Result__item-title {
+    background-color: aliceblue;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}

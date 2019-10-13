@@ -21,6 +21,11 @@ export class Home extends Component {
   compute() {
     if (this.state.selectedMovies.length !== this.MOVIES_REQUIRED_AMOUNT)
       return alert(`São necessários extamente ${this.MOVIES_REQUIRED_AMOUNT} filmes por campeonato.`)
+
+    this.props.history.push({
+      pathname: '/result',
+      state: { winners: this.state.selectedMovies.splice(-2) }
+    })
   }
 
   componentDidMount() {
