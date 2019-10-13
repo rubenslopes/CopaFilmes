@@ -1,0 +1,27 @@
+.Movie {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+}
+
+.Movie:active,
+.Movie:hover,
+.Movie:focus,
+.Movie--selected {
+  background-color: rgb(222, 226, 230);
+}
+
+.Movie__checkbox {
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.Movie__title {
+  display: block;
+  font-weight: bold;
+}

@@ -1,0 +1,21 @@
+.Home__action-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 16px 0;
+}
+
+.Home__movies {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0;
+}
+
+.Home__movies li {
+  flex: 1;
+  min-width: 20%;
+  margin: 8px 2.5%;
+}
