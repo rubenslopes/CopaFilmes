@@ -5,7 +5,6 @@ export class Result extends Component {
   constructor(props) {
     super(props)
 
-    console.log(this.props.history.location.state)
     this.state = this.props.history.location.state || { winners: [] }
   }
 
@@ -18,9 +17,9 @@ export class Result extends Component {
         <ul>
           {this.state.winners.map((competitor, index) => {
             return (
-              <li key={competitor.id} className="Result__item">
+              <li key={competitor} className="Result__item">
                 <span className="Result__item-position">{`${index + 1}º`}</span>
-                <span className="Result__item-title">{competitor.titulo}</span>
+                <span className="Result__item-title">{competitor}</span>
               </li>
             )
           })}
